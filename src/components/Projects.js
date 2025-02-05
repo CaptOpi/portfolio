@@ -1,5 +1,6 @@
 import React from "react";
 import { projects } from "../data";
+import { GiH2O } from "react-icons/gi";
 
 export default function Projects() {
   return (
@@ -7,9 +8,9 @@ export default function Projects() {
       <div className="container px-5 py-10 mx-auto text-center lg:px-0 w-full">
         <div className="flex flex-col w-full mb-20">
           <h1 className="mx-auto inline-block w-10 mb-4" />
-          <h1 className="text-5xl font-extrabold title-font text-white mb-4">
+          <h2 className="text-5xl font-extrabold title-font text-white mb-4">
             Projects I worked on
-          </h1>
+          </h2>
           <p>
             <span className="text-xl italic">Hover to see more information</span>
           </p>

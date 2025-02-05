@@ -119,7 +119,7 @@ function App() {
           </h1>
           <div className="mt-20">
           <div style={{"w":"full", display: 'flex', justifyContent: 'center', alignItems: 'center', height: '30vh' }}>
-            <img src="FullSizeRender.jpg" style={{filter: "brightness(1.5)",animation: 'fadeIn 3s forwards',border:"5px solid black",width:"400px",height:"400px","borderRadius" :"100%"}}/>
+            <img src="FullSizeRender.jpg" alt="noImage" style={{filter: "brightness(1.5)",animation: 'fadeIn 3s forwards',border:"5px solid black",width:"400px",height:"400px","borderRadius" :"100%"}}/>
             </div>
           </div>
         </div>
