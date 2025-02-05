@@ -1,13 +1,154 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* The blink effect */
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.github-btn,
+.linkedin-btn {
+  background-color: #627bac;
+  color: white;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.github-btn:hover, 
+.linkedin-btn:hover {
+  background-color: #627bac;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+.col-centered
+{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.no-select {
+-webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; 
+                             
+}
+
+.custom-textarea
+{
+height:210px;
+}
+
+.nav-top-visible {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.nav-top-hidden {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+.underline--magical {
+  background-image: linear-gradient(120deg, #627bac 0%, #627bac 100%);
+  
+  background-repeat: no-repeat;
+  background-size: 100% 0.25em;
+  background-position: 0 89%;
+  transition: background-size 0.2s ease-in;
+  padding-right: 7px;
+  padding-left: 3px;
+
+}
+
+.underline--magical:hover
+{
+  background-size: 100% 89%;
+  padding-top: 3px;
+}
+
+.underline--magical-2 {
+  background-image: linear-gradient(120deg, #627bac 0%, #627bac 100%);
+  
+  background-repeat: no-repeat;
+  background-size: 100% 0.25em;
+  background-position: 0 89%;
+  transition: background-size 0.2s ease-in;
+  padding-right: 7px;
+  padding-left: 3px;
+  padding-top: -20px;
+
+}
+
+.underline--magical-2:hover
+{
+  background-size: 100% 95%;
+}
+
+.move-up-slightly
+{
+  position: relative;
+  top:0px;
+  transition: all 0.3s ease-out;
+}
+
+.move-up-slightly:hover
+{
+  top:-6px;
+}
+
+.project-picture
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hover-padding:hover
+{
+  padding: 1.5rem;
+}
+
+.delay1
+{
+    animation-delay: 0.15s;
+}
+
+.delay2
+{
+    animation-delay: 0.3s;
+}
+
+.delay3
+{
+    animation-delay: 0.45s;
+}
+
+.delay4
+{
+  animation-delay: 0.5s;
 }
