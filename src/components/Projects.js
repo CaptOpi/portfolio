@@ -1,13 +1,11 @@
 import React from "react";
 import { projects } from "../data";
-import { GiH2O } from "react-icons/gi";
 
 export default function Projects() {
   return (
     <section id="projects" className="text-white bg-black body-font">
-      <div className="container px-5 py-10 mx-auto text-center lg:px-0 w-full">
+      <div className="container px-5 py-10 mx-auto text-center lg:px-0">
         <div className="flex flex-col w-full mb-20">
-          <h1 className="mx-auto inline-block w-10 mb-4" />
           <h2 className="text-5xl font-extrabold title-font text-white mb-4">
             Projects I worked on
           </h2>
@@ -15,12 +13,12 @@ export default function Projects() {
             <span className="text-xl italic">Hover to see more information</span>
           </p>
         </div>
-        <div className="flex flex-wrap -m-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {projects.map((project) => (
             <a
               href={project.link}
               key={project.image}
-              className="w-full md:w-2/3 lg:w-1/2 p-4"
+              className="p-4"
             >
               <div className="relative flex flex-col">
                 <div className="relative w-full h-64 rounded-lg overflow-hidden">
