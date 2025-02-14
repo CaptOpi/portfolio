@@ -87,7 +87,7 @@ function App() {
         <div className="w-12/12 sm:w-11/12 md:w-12/12 lg:w-9/12 col-centered">
           <h1 className="text-2xl font-extrabold">
             <a href="#top" className="text-black kill-link-style">
-              <span className="duration-1000 inline-block rounded-md animate__animated xl:mr-6 animate__fadeInDown border-4 border-black text-black select-none p-2 inline-block text-2xl xl:text-3xl font-extrabold">
+              <span className="duration-1000 inline-block rounded-md animate__animated xl:mr-6 animate__fadeInDown border-4 border-black select-none p-2 inline-block text-2xl xl:text-3xl font-extrabold">
                 AK
               </span>
             </a>
